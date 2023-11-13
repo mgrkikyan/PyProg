@@ -44,7 +44,7 @@ A(15)  # Аргумент не находится в допустимом диа
 
 ```python
 def A(func):
-    def wrapper(*args, **kwargs): # оборачиваем вызов исходной функции func в блок try-except
+    def wrapper(*args, **kwargs): # внутри этой функции оборачиваем вызов исходной функции func в блок try-except
         try:
             return func(*args, **kwargs)
         except Exception as e:  # можно указать конкретные типы исключений
