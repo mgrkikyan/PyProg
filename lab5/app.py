@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Чтение данных из текстового файла
-with open('file.txt', 'r') as file:
+with open('lab5/file.txt', 'r') as file:
     data = file.readlines()
 
 # Разделение координат на x и y
