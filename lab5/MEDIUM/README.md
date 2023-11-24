@@ -39,5 +39,8 @@ f.set_ylabel("y")
 plt.show()
 ```
 
+# Результат
+![Image text](график.png)
+
 ### 2. Список использованных источников 
 1. [Seaborn](https://habr.com/ru/companies/otus/articles/540526/)
