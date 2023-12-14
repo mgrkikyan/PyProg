@@ -21,3 +21,4 @@ point_0 = (0, 0)
 rastoyanie2 = (point_1[0] ** 2 + point_1[1] ** 2) ** 0.5
 print(rastoyanie2 <= S)
 
+
