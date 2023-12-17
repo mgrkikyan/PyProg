@@ -1,27 +1,24 @@
 import typer
-from superpack import main_7_, main2_8_, app_7_
-from main_7_ import func as main_7_func
-from main2_8_ import divide as main2_8_divide
-from app_7_ import split as app_7_split
+
+from superpack import main2_8_
+from superpack import main_7_
+from superpack import app_7_
 
 app = typer.Typer()
 
-@app.command()
-def run_module1(num: int):
-    main_7_func(num)
 
 @app.command()
-def run_module2(a: int, b: int):
-    main2_8_divide(a, b)
+def foo(i: int):
+    print(f'i: {i}\n', main_7_.func(i))
+
 
 @app.command()
-def run_module3(lst: str, n: int):
-    lst = lst.split(",")
-    result = app_7_split(lst, n)
-    typer.echo(result)
+def foo2(a: int, b: int):
+    print(f'a: {a}, b: {b}\n', main2_8_.divide(a, b))
+
+@app.command()
+def foo3(lst: list, n: int):
+    print(f'lst: {lst}, n: {n}\n', app_7_.split(lst, n))
 
 if __name__ == "__main__":
     app()
-
-
-

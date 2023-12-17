@@ -13,4 +13,5 @@ def func(i):
         print(A)
         return A
 
-func(1)
+
+# func()

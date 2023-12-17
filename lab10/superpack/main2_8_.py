@@ -12,5 +12,5 @@ def divide(a, b):
     result = a / b
     print(f"Результат деления: {result}")
 
-divide(10, 2)  # Результат деления: 5.0
-divide(10, 0)  # Произошла ошибка: division by zero
+# divide(10, 2)  # Результат деления: 5.0
+# divide(10, 0)  # Произошла ошибка: division by zero
